@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task_2b" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mJN-IY-JPF">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EnterCurrent Heart Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZD-fD-u4H">
+                                <rect key="frame" x="42.333333333333343" y="143" width="308.66666666666663" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LYw-tZ-OVx">
+                                <rect key="frame" x="100" y="235" width="193" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="2ZS-Rk-sDf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94H-Uz-iLY">
+                                <rect key="frame" x="176" y="391" width="41.333333333333343" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRN-NY-ZwZ">
+                                <rect key="frame" x="149.33333333333334" y="292" width="94.333333333333343" height="34"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Generate">
+                                    <color key="baseBackgroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ih5-bs-bR0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j1Z-Ck-DSd"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="94H-Uz-iLY" firstAttribute="centerY" secondItem="mJN-IY-JPF" secondAttribute="centerY" id="9Cs-qc-oTp"/>
+                            <constraint firstItem="LYw-tZ-OVx" firstAttribute="leading" secondItem="j1Z-Ck-DSd" secondAttribute="leading" constant="100" id="BWV-DS-vDK"/>
+                            <constraint firstItem="gZD-fD-u4H" firstAttribute="centerX" secondItem="mJN-IY-JPF" secondAttribute="centerX" id="G0J-3g-ZlK"/>
+                            <constraint firstItem="CRN-NY-ZwZ" firstAttribute="centerX" secondItem="mJN-IY-JPF" secondAttribute="centerX" id="LlI-zx-SdV"/>
+                            <constraint firstItem="gZD-fD-u4H" firstAttribute="top" secondItem="j1Z-Ck-DSd" secondAttribute="top" constant="84" id="QZa-Jn-1B1"/>
+                            <constraint firstItem="LYw-tZ-OVx" firstAttribute="centerX" secondItem="94H-Uz-iLY" secondAttribute="centerX" id="RUG-88-ihx"/>
+                            <constraint firstItem="CRN-NY-ZwZ" firstAttribute="top" secondItem="LYw-tZ-OVx" secondAttribute="bottom" constant="24" id="TDU-4k-vWh"/>
+                            <constraint firstItem="j1Z-Ck-DSd" firstAttribute="bottom" secondItem="gZD-fD-u4H" secondAttribute="bottom" constant="617" id="cnn-R9-zWC"/>
+                            <constraint firstItem="j1Z-Ck-DSd" firstAttribute="bottom" secondItem="94H-Uz-iLY" secondAttribute="bottom" constant="357" id="kxY-h2-cYi"/>
+                            <constraint firstItem="LYw-tZ-OVx" firstAttribute="centerX" secondItem="gZD-fD-u4H" secondAttribute="centerX" id="o1Q-r2-z5p"/>
+                            <constraint firstItem="LYw-tZ-OVx" firstAttribute="top" secondItem="gZD-fD-u4H" secondAttribute="bottom" constant="34" id="rAU-bU-czz"/>
+                            <constraint firstItem="94H-Uz-iLY" firstAttribute="top" secondItem="CRN-NY-ZwZ" secondAttribute="bottom" constant="65" id="uA2-c2-asA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fieldtxt" destination="LYw-tZ-OVx" id="Pu0-b8-86N"/>
+                        <outlet property="lbltxt" destination="94H-Uz-iLY" id="Pq7-rJ-bA8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="45.038167938931295" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
